@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author XXY
+ * @author hxt1
  */
 @Controller
 @RequestMapping("user")
