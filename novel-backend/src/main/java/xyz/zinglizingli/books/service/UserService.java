@@ -3,12 +3,12 @@ package xyz.zinglizingli.books.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import xyz.zinglizingli.books.entity.po.User;
+import xyz.zinglizingli.books.entity.po.UserExample;
+import xyz.zinglizingli.books.entity.po.UserRefBook;
+import xyz.zinglizingli.books.entity.po.UserRefBookExample;
 import xyz.zinglizingli.books.mapper.UserMapper;
 import xyz.zinglizingli.books.mapper.UserRefBookMapper;
-import xyz.zinglizingli.books.po.User;
-import xyz.zinglizingli.books.po.UserExample;
-import xyz.zinglizingli.books.po.UserRefBook;
-import xyz.zinglizingli.books.po.UserRefBookExample;
 import xyz.zinglizingli.common.utils.MD5Util;
 
 import java.util.List;

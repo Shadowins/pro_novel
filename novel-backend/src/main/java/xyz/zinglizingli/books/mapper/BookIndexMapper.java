@@ -1,8 +1,8 @@
 package xyz.zinglizingli.books.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import xyz.zinglizingli.books.po.BookIndex;
-import xyz.zinglizingli.books.po.BookIndexExample;
+import xyz.zinglizingli.books.entity.po.BookIndex;
+import xyz.zinglizingli.books.entity.po.BookIndexExample;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="xyz.zinglizingli.books.mapper.BookIndexMapper">
-    <resultMap id="BaseResultMap" type="xyz.zinglizingli.books.po.BookIndex">
+    <resultMap id="BaseResultMap" type="xyz.zinglizingli.books.entity.po.BookIndex">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="book_id" property="bookId" jdbcType="BIGINT"/>
         <result column="index_num" property="indexNum" jdbcType="INTEGER"/>
@@ -70,7 +70,7 @@
     <sql id="Base_Column_List">
     id, book_id, index_num, index_name
   </sql>
-    <select id="selectByExample" resultMap="BaseResultMap" parameterType="xyz.zinglizingli.books.po.BookIndexExample">
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="xyz.zinglizingli.books.entity.po.BookIndexExample">
         select
         <if test="distinct">
             distinct
@@ -94,19 +94,19 @@
     delete from book_index
     where id = #{id,jdbcType=BIGINT}
   </delete>
-    <delete id="deleteByExample" parameterType="xyz.zinglizingli.books.po.BookIndexExample">
+    <delete id="deleteByExample" parameterType="xyz.zinglizingli.books.entity.po.BookIndexExample">
         delete from book_index
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="xyz.zinglizingli.books.po.BookIndex">
+    <insert id="insert" parameterType="xyz.zinglizingli.books.entity.po.BookIndex">
     insert into book_index (id, book_id, index_num, 
       index_name)
     values (#{id,jdbcType=BIGINT}, #{bookId,jdbcType=BIGINT}, #{indexNum,jdbcType=INTEGER}, 
       #{indexName,jdbcType=VARCHAR})
   </insert>
-    <insert id="insertSelective" parameterType="xyz.zinglizingli.books.po.BookIndex" useGeneratedKeys="true"
+    <insert id="insertSelective" parameterType="xyz.zinglizingli.books.entity.po.BookIndex" useGeneratedKeys="true"
             keyProperty="id">
         insert into book_index
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -138,7 +138,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="xyz.zinglizingli.books.po.BookIndexExample"
+    <select id="countByExample" parameterType="xyz.zinglizingli.books.entity.po.BookIndexExample"
             resultType="java.lang.Integer">
         select count(*) from book_index
         <if test="_parameter != null">
@@ -175,7 +175,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="xyz.zinglizingli.books.po.BookIndex">
+    <update id="updateByPrimaryKeySelective" parameterType="xyz.zinglizingli.books.entity.po.BookIndex">
         update book_index
         <set>
             <if test="bookId != null">
@@ -190,7 +190,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="xyz.zinglizingli.books.po.BookIndex">
+    <update id="updateByPrimaryKey" parameterType="xyz.zinglizingli.books.entity.po.BookIndex">
     update book_index
     set book_id = #{bookId,jdbcType=BIGINT},
       index_num = #{indexNum,jdbcType=INTEGER},

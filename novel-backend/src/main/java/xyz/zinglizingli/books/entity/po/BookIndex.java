@@ -1,17 +1,15 @@
-package xyz.zinglizingli.books.po;
+package xyz.zinglizingli.books.entity.po;
 
 import java.io.Serializable;
 
-public class BookContent implements Serializable {
+public class BookIndex implements Serializable {
     private Long id;
 
     private Long bookId;
 
-    private Long indexId;
-
     private Integer indexNum;
 
-    private String content;
+    private String indexName;
 
     public Long getId() {
         return id;
@@ -29,14 +27,6 @@ public class BookContent implements Serializable {
         this.bookId = bookId;
     }
 
-    public Long getIndexId() {
-        return indexId;
-    }
-
-    public void setIndexId(Long indexId) {
-        this.indexId = indexId;
-    }
-
     public Integer getIndexNum() {
         return indexNum;
     }
@@ -45,11 +35,11 @@ public class BookContent implements Serializable {
         this.indexNum = indexNum;
     }
 
-    public String getContent() {
-        return content;
+    public String getIndexName() {
+        return indexName;
     }
 
-    public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+    public void setIndexName(String indexName) {
+        this.indexName = indexName == null ? null : indexName.trim();
     }
 }

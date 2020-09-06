@@ -13,7 +13,7 @@ import xyz.zinglizingli.books.core.config.IndexRecBooksConfig;
 import xyz.zinglizingli.books.core.config.SeoConfig;
 import xyz.zinglizingli.books.core.constant.CacheKeyConstans;
 import xyz.zinglizingli.books.core.utils.Constants;
-import xyz.zinglizingli.books.po.Book;
+import xyz.zinglizingli.books.entity.po.Book;
 import xyz.zinglizingli.books.service.BookService;
 import xyz.zinglizingli.common.cache.CommonCacheUtil;
 

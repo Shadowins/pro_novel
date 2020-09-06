@@ -1,17 +1,17 @@
-package xyz.zinglizingli.books.po;
+package xyz.zinglizingli.books.entity.po;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class BookUpdateTimeLogExample {
+public class ScreenBulletExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public BookUpdateTimeLogExample() {
+    public ScreenBulletExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
@@ -115,173 +115,243 @@ public class BookUpdateTimeLogExample {
             return (Criteria) this;
         }
 
-        public Criteria andIdEqualTo(Integer value) {
+        public Criteria andIdEqualTo(Long value) {
             addCriterion("id =", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotEqualTo(Integer value) {
+        public Criteria andIdNotEqualTo(Long value) {
             addCriterion("id <>", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdGreaterThan(Integer value) {
+        public Criteria andIdGreaterThan(Long value) {
             addCriterion("id >", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdGreaterThanOrEqualTo(Integer value) {
+        public Criteria andIdGreaterThanOrEqualTo(Long value) {
             addCriterion("id >=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLessThan(Integer value) {
+        public Criteria andIdLessThan(Long value) {
             addCriterion("id <", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLessThanOrEqualTo(Integer value) {
+        public Criteria andIdLessThanOrEqualTo(Long value) {
             addCriterion("id <=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdIn(List<Integer> values) {
+        public Criteria andIdIn(List<Long> values) {
             addCriterion("id in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotIn(List<Integer> values) {
+        public Criteria andIdNotIn(List<Long> values) {
             addCriterion("id not in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdBetween(Integer value1, Integer value2) {
+        public Criteria andIdBetween(Long value1, Long value2) {
             addCriterion("id between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotBetween(Integer value1, Integer value2) {
+        public Criteria andIdNotBetween(Long value1, Long value2) {
             addCriterion("id not between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdIsNull() {
-            addCriterion("book_cat_id is null");
+        public Criteria andContentIdIsNull() {
+            addCriterion("content_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdIsNotNull() {
-            addCriterion("book_cat_id is not null");
+        public Criteria andContentIdIsNotNull() {
+            addCriterion("content_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdEqualTo(Integer value) {
-            addCriterion("book_cat_id =", value, "bookCatId");
+        public Criteria andContentIdEqualTo(Long value) {
+            addCriterion("content_id =", value, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdNotEqualTo(Integer value) {
-            addCriterion("book_cat_id <>", value, "bookCatId");
+        public Criteria andContentIdNotEqualTo(Long value) {
+            addCriterion("content_id <>", value, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdGreaterThan(Integer value) {
-            addCriterion("book_cat_id >", value, "bookCatId");
+        public Criteria andContentIdGreaterThan(Long value) {
+            addCriterion("content_id >", value, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("book_cat_id >=", value, "bookCatId");
+        public Criteria andContentIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("content_id >=", value, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdLessThan(Integer value) {
-            addCriterion("book_cat_id <", value, "bookCatId");
+        public Criteria andContentIdLessThan(Long value) {
+            addCriterion("content_id <", value, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdLessThanOrEqualTo(Integer value) {
-            addCriterion("book_cat_id <=", value, "bookCatId");
+        public Criteria andContentIdLessThanOrEqualTo(Long value) {
+            addCriterion("content_id <=", value, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdIn(List<Integer> values) {
-            addCriterion("book_cat_id in", values, "bookCatId");
+        public Criteria andContentIdIn(List<Long> values) {
+            addCriterion("content_id in", values, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdNotIn(List<Integer> values) {
-            addCriterion("book_cat_id not in", values, "bookCatId");
+        public Criteria andContentIdNotIn(List<Long> values) {
+            addCriterion("content_id not in", values, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdBetween(Integer value1, Integer value2) {
-            addCriterion("book_cat_id between", value1, value2, "bookCatId");
+        public Criteria andContentIdBetween(Long value1, Long value2) {
+            addCriterion("content_id between", value1, value2, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andBookCatIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("book_cat_id not between", value1, value2, "bookCatId");
+        public Criteria andContentIdNotBetween(Long value1, Long value2) {
+            addCriterion("content_id not between", value1, value2, "contentId");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeIsNull() {
-            addCriterion("last_update_time is null");
+        public Criteria andScreenBulletIsNull() {
+            addCriterion("screen_bullet is null");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeIsNotNull() {
-            addCriterion("last_update_time is not null");
+        public Criteria andScreenBulletIsNotNull() {
+            addCriterion("screen_bullet is not null");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeEqualTo(Date value) {
-            addCriterion("last_update_time =", value, "lastUpdateTime");
+        public Criteria andScreenBulletEqualTo(String value) {
+            addCriterion("screen_bullet =", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeNotEqualTo(Date value) {
-            addCriterion("last_update_time <>", value, "lastUpdateTime");
+        public Criteria andScreenBulletNotEqualTo(String value) {
+            addCriterion("screen_bullet <>", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeGreaterThan(Date value) {
-            addCriterion("last_update_time >", value, "lastUpdateTime");
+        public Criteria andScreenBulletGreaterThan(String value) {
+            addCriterion("screen_bullet >", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeGreaterThanOrEqualTo(Date value) {
-            addCriterion("last_update_time >=", value, "lastUpdateTime");
+        public Criteria andScreenBulletGreaterThanOrEqualTo(String value) {
+            addCriterion("screen_bullet >=", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeLessThan(Date value) {
-            addCriterion("last_update_time <", value, "lastUpdateTime");
+        public Criteria andScreenBulletLessThan(String value) {
+            addCriterion("screen_bullet <", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeLessThanOrEqualTo(Date value) {
-            addCriterion("last_update_time <=", value, "lastUpdateTime");
+        public Criteria andScreenBulletLessThanOrEqualTo(String value) {
+            addCriterion("screen_bullet <=", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeIn(List<Date> values) {
-            addCriterion("last_update_time in", values, "lastUpdateTime");
+        public Criteria andScreenBulletLike(String value) {
+            addCriterion("screen_bullet like", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeNotIn(List<Date> values) {
-            addCriterion("last_update_time not in", values, "lastUpdateTime");
+        public Criteria andScreenBulletNotLike(String value) {
+            addCriterion("screen_bullet not like", value, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeBetween(Date value1, Date value2) {
-            addCriterion("last_update_time between", value1, value2, "lastUpdateTime");
+        public Criteria andScreenBulletIn(List<String> values) {
+            addCriterion("screen_bullet in", values, "screenBullet");
             return (Criteria) this;
         }
 
-        public Criteria andLastUpdateTimeNotBetween(Date value1, Date value2) {
-            addCriterion("last_update_time not between", value1, value2, "lastUpdateTime");
+        public Criteria andScreenBulletNotIn(List<String> values) {
+            addCriterion("screen_bullet not in", values, "screenBullet");
+            return (Criteria) this;
+        }
+
+        public Criteria andScreenBulletBetween(String value1, String value2) {
+            addCriterion("screen_bullet between", value1, value2, "screenBullet");
+            return (Criteria) this;
+        }
+
+        public Criteria andScreenBulletNotBetween(String value1, String value2) {
+            addCriterion("screen_bullet not between", value1, value2, "screenBullet");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeIsNull() {
+            addCriterion("create_time is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeIsNotNull() {
+            addCriterion("create_time is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeEqualTo(Date value) {
+            addCriterion("create_time =", value, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeNotEqualTo(Date value) {
+            addCriterion("create_time <>", value, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeGreaterThan(Date value) {
+            addCriterion("create_time >", value, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("create_time >=", value, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeLessThan(Date value) {
+            addCriterion("create_time <", value, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeLessThanOrEqualTo(Date value) {
+            addCriterion("create_time <=", value, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeIn(List<Date> values) {
+            addCriterion("create_time in", values, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeNotIn(List<Date> values) {
+            addCriterion("create_time not in", values, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeBetween(Date value1, Date value2) {
+            addCriterion("create_time between", value1, value2, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andCreateTimeNotBetween(Date value1, Date value2) {
+            addCriterion("create_time not between", value1, value2, "createTime");
             return (Criteria) this;
         }
     }

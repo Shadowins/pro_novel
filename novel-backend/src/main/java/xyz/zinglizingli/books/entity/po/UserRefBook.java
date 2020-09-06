@@ -1,4 +1,4 @@
-package xyz.zinglizingli.books.po;
+package xyz.zinglizingli.books.entity.po;
 
 public class UserRefBook {
     private Long id;

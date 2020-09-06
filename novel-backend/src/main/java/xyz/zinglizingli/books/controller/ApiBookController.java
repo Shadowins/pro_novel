@@ -1,4 +1,4 @@
-package xyz.zinglizingli.books.web;
+package xyz.zinglizingli.books.controller;
 
 
 import com.github.pagehelper.PageInfo;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import xyz.zinglizingli.books.core.utils.CatUtil;
 import xyz.zinglizingli.books.core.utils.Constants;
-import xyz.zinglizingli.books.po.Book;
-import xyz.zinglizingli.books.po.BookContent;
-import xyz.zinglizingli.books.po.BookIndex;
+import xyz.zinglizingli.books.entity.po.Book;
+import xyz.zinglizingli.books.entity.po.BookContent;
+import xyz.zinglizingli.books.entity.po.BookIndex;
+import xyz.zinglizingli.books.entity.vo.BookVO;
 import xyz.zinglizingli.books.service.BookService;
-import xyz.zinglizingli.books.vo.BookVO;
 import xyz.zinglizingli.common.cache.CommonCacheUtil;
 
 import java.util.*;

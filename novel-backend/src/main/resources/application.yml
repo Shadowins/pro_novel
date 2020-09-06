@@ -62,7 +62,7 @@ spring:
 #    static-path-pattern: /static/** #设定静态文件路径，js,css等
 mybatis:
   mapper-locations: classpath:mybatis/mapping/*.xml
-  type-aliases-package: xyz.zinglizingli.books.po
+  type-aliases-package: xyz.zinglizingli.books.entity.po
 
 
 #首页本站推荐小说配置

@@ -1,6 +1,6 @@
-package xyz.zinglizingli.books.vo;
+package xyz.zinglizingli.books.entity.vo;
 
-import xyz.zinglizingli.books.po.Book;
+import xyz.zinglizingli.books.entity.po.Book;
 
 public class BookVO extends Book {
 

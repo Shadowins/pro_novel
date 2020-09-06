@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="xyz.zinglizingli.books.mapper.BookMapper">
-    <resultMap id="BaseResultMap" type="xyz.zinglizingli.books.po.Book">
+    <resultMap id="BaseResultMap" type="xyz.zinglizingli.books.entity.po.Book">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="catId" property="catid" jdbcType="INTEGER"/>
         <result column="pic_url" property="picUrl" jdbcType="VARCHAR"/>
@@ -80,7 +80,7 @@
     id, catId, pic_url, book_name, author, book_desc, score, book_status, visit_count,
     update_time,soft_cat,soft_tag
   </sql>
-    <select id="selectByExample" resultMap="BaseResultMap" parameterType="xyz.zinglizingli.books.po.BookExample">
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="xyz.zinglizingli.books.entity.po.BookExample">
         select
         <if test="distinct">
             distinct
@@ -104,13 +104,13 @@
     delete from book
     where id = #{id,jdbcType=BIGINT}
   </delete>
-    <delete id="deleteByExample" parameterType="xyz.zinglizingli.books.po.BookExample">
+    <delete id="deleteByExample" parameterType="xyz.zinglizingli.books.entity.po.BookExample">
         delete from book
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="xyz.zinglizingli.books.po.Book">
+    <insert id="insert" parameterType="xyz.zinglizingli.books.entity.po.Book">
     insert into book (id, catId, pic_url,
       book_name, author, book_desc,
       score, book_status, visit_count,
@@ -120,7 +120,7 @@
       #{score,jdbcType=REAL}, #{bookStatus,jdbcType=VARCHAR}, #{visitCount,jdbcType=BIGINT},
       #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-    <insert id="insertSelective" parameterType="xyz.zinglizingli.books.po.Book" useGeneratedKeys="true"
+    <insert id="insertSelective" parameterType="xyz.zinglizingli.books.entity.po.Book" useGeneratedKeys="true"
             keyProperty="id">
         insert into book
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -188,7 +188,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="xyz.zinglizingli.books.po.BookExample" resultType="java.lang.Integer">
+    <select id="countByExample" parameterType="xyz.zinglizingli.books.entity.po.BookExample" resultType="java.lang.Integer">
         select count(*) from book
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
@@ -248,7 +248,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="xyz.zinglizingli.books.po.Book">
+    <update id="updateByPrimaryKeySelective" parameterType="xyz.zinglizingli.books.entity.po.Book">
         update book
         <set>
             <if test="catid != null">
@@ -281,7 +281,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="xyz.zinglizingli.books.po.Book">
+    <update id="updateByPrimaryKey" parameterType="xyz.zinglizingli.books.entity.po.Book">
     update book
     set catId = #{catid,jdbcType=INTEGER},
       pic_url = #{picUrl,jdbcType=VARCHAR},

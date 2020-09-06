@@ -1,8 +1,8 @@
 package xyz.zinglizingli.books.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import xyz.zinglizingli.books.po.BookUpdateTimeLog;
-import xyz.zinglizingli.books.po.BookUpdateTimeLogExample;
+import xyz.zinglizingli.books.entity.po.BookUpdateTimeLog;
+import xyz.zinglizingli.books.entity.po.BookUpdateTimeLogExample;
 
 import java.util.List;
 

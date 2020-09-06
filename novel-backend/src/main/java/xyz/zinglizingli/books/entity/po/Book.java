@@ -1,4 +1,4 @@
-package xyz.zinglizingli.books.po;
+package xyz.zinglizingli.books.entity.po;
 
 
 import java.io.Serializable;

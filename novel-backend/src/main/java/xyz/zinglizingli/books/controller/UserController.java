@@ -1,4 +1,4 @@
-package xyz.zinglizingli.books.web;
+package xyz.zinglizingli.books.controller;
 
 
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import xyz.zinglizingli.books.po.User;
+import xyz.zinglizingli.books.entity.po.User;
 import xyz.zinglizingli.books.service.UserService;
 import xyz.zinglizingli.common.cache.CommonCacheUtil;
 import xyz.zinglizingli.common.utils.UUIDUtils;

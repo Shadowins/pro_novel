@@ -1,16 +1,16 @@
-package xyz.zinglizingli.books.po;
+package xyz.zinglizingli.books.entity.po;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookIndexExample {
+public class BookContentExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public BookIndexExample() {
+    public BookContentExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
@@ -224,6 +224,66 @@ public class BookIndexExample {
             return (Criteria) this;
         }
 
+        public Criteria andIndexIdIsNull() {
+            addCriterion("index_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdIsNotNull() {
+            addCriterion("index_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdEqualTo(Long value) {
+            addCriterion("index_id =", value, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdNotEqualTo(Long value) {
+            addCriterion("index_id <>", value, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdGreaterThan(Long value) {
+            addCriterion("index_id >", value, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("index_id >=", value, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdLessThan(Long value) {
+            addCriterion("index_id <", value, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdLessThanOrEqualTo(Long value) {
+            addCriterion("index_id <=", value, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdIn(List<Long> values) {
+            addCriterion("index_id in", values, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdNotIn(List<Long> values) {
+            addCriterion("index_id not in", values, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdBetween(Long value1, Long value2) {
+            addCriterion("index_id between", value1, value2, "indexId");
+            return (Criteria) this;
+        }
+
+        public Criteria andIndexIdNotBetween(Long value1, Long value2) {
+            addCriterion("index_id not between", value1, value2, "indexId");
+            return (Criteria) this;
+        }
+
         public Criteria andIndexNumIsNull() {
             addCriterion("index_num is null");
             return (Criteria) this;
@@ -284,73 +344,73 @@ public class BookIndexExample {
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameIsNull() {
-            addCriterion("index_name is null");
+        public Criteria andContentIsNull() {
+            addCriterion("content is null");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameIsNotNull() {
-            addCriterion("index_name is not null");
+        public Criteria andContentIsNotNull() {
+            addCriterion("content is not null");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameEqualTo(String value) {
-            addCriterion("index_name =", value, "indexName");
+        public Criteria andContentEqualTo(String value) {
+            addCriterion("content =", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameNotEqualTo(String value) {
-            addCriterion("index_name <>", value, "indexName");
+        public Criteria andContentNotEqualTo(String value) {
+            addCriterion("content <>", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameGreaterThan(String value) {
-            addCriterion("index_name >", value, "indexName");
+        public Criteria andContentGreaterThan(String value) {
+            addCriterion("content >", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameGreaterThanOrEqualTo(String value) {
-            addCriterion("index_name >=", value, "indexName");
+        public Criteria andContentGreaterThanOrEqualTo(String value) {
+            addCriterion("content >=", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameLessThan(String value) {
-            addCriterion("index_name <", value, "indexName");
+        public Criteria andContentLessThan(String value) {
+            addCriterion("content <", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameLessThanOrEqualTo(String value) {
-            addCriterion("index_name <=", value, "indexName");
+        public Criteria andContentLessThanOrEqualTo(String value) {
+            addCriterion("content <=", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameLike(String value) {
-            addCriterion("index_name like", value, "indexName");
+        public Criteria andContentLike(String value) {
+            addCriterion("content like", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameNotLike(String value) {
-            addCriterion("index_name not like", value, "indexName");
+        public Criteria andContentNotLike(String value) {
+            addCriterion("content not like", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameIn(List<String> values) {
-            addCriterion("index_name in", values, "indexName");
+        public Criteria andContentIn(List<String> values) {
+            addCriterion("content in", values, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameNotIn(List<String> values) {
-            addCriterion("index_name not in", values, "indexName");
+        public Criteria andContentNotIn(List<String> values) {
+            addCriterion("content not in", values, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameBetween(String value1, String value2) {
-            addCriterion("index_name between", value1, value2, "indexName");
+        public Criteria andContentBetween(String value1, String value2) {
+            addCriterion("content between", value1, value2, "content");
             return (Criteria) this;
         }
 
-        public Criteria andIndexNameNotBetween(String value1, String value2) {
-            addCriterion("index_name not between", value1, value2, "indexName");
+        public Criteria andContentNotBetween(String value1, String value2) {
+            addCriterion("content not between", value1, value2, "content");
             return (Criteria) this;
         }
     }

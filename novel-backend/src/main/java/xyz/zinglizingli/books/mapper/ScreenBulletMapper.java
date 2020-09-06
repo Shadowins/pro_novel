@@ -1,8 +1,8 @@
 package xyz.zinglizingli.books.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import xyz.zinglizingli.books.po.ScreenBullet;
-import xyz.zinglizingli.books.po.ScreenBulletExample;
+import xyz.zinglizingli.books.entity.po.ScreenBullet;
+import xyz.zinglizingli.books.entity.po.ScreenBulletExample;
 
 import java.util.List;
 

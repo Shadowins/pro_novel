@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import xyz.zinglizingli.books.po.Book;
+import xyz.zinglizingli.books.entity.po.Book;
 import xyz.zinglizingli.books.service.BookService;
 
 import java.util.List;
