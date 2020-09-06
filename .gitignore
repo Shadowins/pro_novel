@@ -1,2 +1,7 @@
 semantic
 node_modules
+/target
+/.idea
+/cachedata
+/logs
+/novel-backend.iml
