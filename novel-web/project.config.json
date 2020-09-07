@@ -1,6 +1,6 @@
 {
 	"miniprogramRoot": "dist/",
-	"projectname": "book",
+	"projectname": "mybook",
 	"description": "这是一个看书的移动端app",
 	"appid": "wx6192fe5c86ae011d",
 	"setting": {
