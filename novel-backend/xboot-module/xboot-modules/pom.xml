@@ -17,6 +17,7 @@
         <module>xboot-generator</module>
         <module>xboot-open</module>
         <module>xboot-your</module>
+        <module>xboot-book</module>
     </modules>
 
 
